@@ -1,6 +1,6 @@
-name: invite-on-label
+name: auto-invite
 description: Send invitation based on issue label
-author: Abishek P.Y
+author: Danil Zasypkin
 branding:
   icon: anchor
   color: green
@@ -14,6 +14,10 @@ inputs:
   repo-token:
     description: 'GitHub token for repo'
     required: true
+  role:
+    description: 'GitHub user role'
+    required: true
+    default: member
   comment:
     description: A comment which will be posted on the issue.
     required: false
