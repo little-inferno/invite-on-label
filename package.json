@@ -4,7 +4,7 @@
   "description": "Automate organization invitation based on the label",
   "main": "index.js",
   "scripts": {
-    "build": "ncc build index.js",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && ncc build index.js",
     "prettier": "prettier \"*.{js,json}\"",
     "format": "npm run prettier -- --write",
     "lint": "eslint . --ext .js",
@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/vj-abishek/invite-on-label#readme",
   "dependencies": {
-    "@actions/core": "^1.10.0",
-    "@actions/github": "^4.0.0"
+    "@actions/core": "1.10.0",
+    "@actions/github": "5.1.1"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.27.0",

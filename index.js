@@ -16,7 +16,7 @@ const main = async () => {
     }
     const octokit = github.getOctokit(INVITE_TOKEN);
 
-    const currentLabel = payload.label.name;
+    const currentLabel = ''
 
     const org = core.getInput('organization', {required: true});
     const label = core.getInput('label', {required: true});
